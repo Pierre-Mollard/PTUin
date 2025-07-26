@@ -33,14 +33,17 @@
    
    <extension
          point="org.eclipse.ui.editors">
-      <editor
-        id="ptuin.editor"
-        name="PTUin Editor"
-        icon="icons/poop.png"
-        extensions="ptu"
-        contentType="ptuin.source"
-        class="org.eclipse.ui.editors.text.TextEditor">
-    </editor>
+      <editorContentTypeBinding
+            contentTypeId="ptuin.source"
+            editorId="org.eclipse.ui.genericeditor.GenericEditor">
+      </editorContentTypeBinding>
    </extension>
-   >
+   <extension
+         point="org.eclipse.ui.genericeditor.icons">
+      <icon
+            contentType="ptuin.source"
+            icon="icons/poop16.png">
+      </icon>
+   </extension>
+
 </plugin>
