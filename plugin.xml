@@ -45,5 +45,14 @@
             icon="icons/poop16.png">
       </icon>
    </extension>
+   <extension
+         point="org.eclipse.tm4e.ui.themes">
+      <theme
+            default="true"
+            id="rtscript.default"
+            name="RTscript  Default"
+            path="themes/rtscript.tmTheme.json">
+      </theme>
+   </extension>
 
 </plugin>
